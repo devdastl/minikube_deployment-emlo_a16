@@ -6,7 +6,7 @@ TAG = assignment16-v1
 help:
 	@echo "Makefile supported commands:"
 	@echo "build-image: Build image from Dockerfile"
-	@echo "run-interactive: Run docker container in interactive mode"
+	@echo "start-minikube: Run docker container in interactive mode"
 	@echo "run-train: Run training on default config"
 
 start-minikube:
