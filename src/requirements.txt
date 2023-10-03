@@ -1,0 +1,6 @@
+fastapi
+pillow
+requests
+transformers
+uvicorn
+python-multipart

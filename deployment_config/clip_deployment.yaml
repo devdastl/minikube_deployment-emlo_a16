@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: clip-deployment
+    labels:
+        app: clip
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: clip
+    template:
+        metadata:
+            labels:
+                app: clip
+        spec:
+            containers:
+                - name: clip-inference
+                  image: default/emlo:assignment16-v1
+                  imagePullPolicy: Never
+                  ports:
+                      - containerPort: 7860
